@@ -1,6 +1,6 @@
 <template>
   <q-layout view="hHh Lpr fFf">
-    <q-header elevated class="bg-white text-black flex" style="height: 80px;padding-right:10%;padding-left:80px">
+    <q-header elevated class="bg-white text-black flex" style="height: 80px;padding-right:20px;padding-left:80px">
       <q-toolbar class="q-px-lg">
         <!-- Logo -->
         <q-toolbar-title shrink class="text-weight-bold">
@@ -81,8 +81,12 @@
         <q-space />
 
         <!-- Auth Buttons -->
-        <div style="max-width:500px">
-          <q-input :model-value="search" border aria-placeholder="search"></q-input>
+        <div style="width:700px;justify-content:flex-end;align-items:center" class="flex">
+          <q-input debounce="500" class="q-mr-lg" rounded outlined dense  placeholder="Search" >
+            <template v-slot:append>
+              <q-icon name="mdi-magnify" />
+            </template>
+          </q-input>
           <q-btn style="font-size: 14px;" rounded flat class="q-mr-lg" label="Login" to="/" />
           <q-btn style="letter-spacing: .4px; border-radius: 12px; padding: 11px 24px; font-size: 14px; font-weight: 500" class="bg-green-8 text-white text-weight-regular" push label="Sign Up" to="/about"/>
         </div>
