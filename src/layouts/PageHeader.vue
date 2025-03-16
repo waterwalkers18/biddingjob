@@ -88,7 +88,7 @@
             </template>
           </q-input>
           <q-btn style="font-size: 14px;" rounded flat class="q-mr-lg" label="Login" to="/" />
-          <q-btn style="letter-spacing: .4px; border-radius: 12px; padding: 11px 24px; font-size: 14px; font-weight: 500" class="bg-green-8 text-white text-weight-regular" push label="Sign Up" to="/about"/>
+          <q-btn style="letter-spacing: .4px; border-radius: 12px; padding: 11px 24px; font-size: 14px; font-weight: 500;background-color:#0077B6" class="text-white text-weight-regular" push label="Sign Up" to="/auth/register"/>
         </div>
       </q-toolbar>
     </q-header>
